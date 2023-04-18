@@ -1,0 +1,143 @@
+.mostrarArriba {
+    animation: mostrarArriba 1s;
+}
+
+@keyframes mostrarArriba {
+    0% {
+        opacity: 0;
+        transform: translateY(800px);
+    }
+
+    50% {
+        opacity: 0.4;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.mostrarAbajo {
+    animation: mostrarAbajo 1s;
+}
+
+@keyframes mostrarAbajo {
+    0% {
+        opacity: 0;
+        transform: translateY(-800px);
+    }
+
+    50% {
+        opacity: 0.4;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.MostrarDerecha {
+    animation: MostrarDerecha 1s;
+}
+
+@keyframes MostrarDerecha {
+    0% {
+        opacity: 0;
+        transform: translateX(800px);
+    }
+
+    50% {
+        opacity: 0.4;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+.MostrarUno {
+    animation: MostrarUno 1s;
+}
+
+@keyframes MostrarUno {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.MostrarDos {
+    animation: MostrarDos 1.5s;
+}
+
+@keyframes MostrarDos {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.MostrarTres {
+    animation: MostrarTres 2s;
+}
+
+@keyframes MostrarTres {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.MostrarCuatro {
+    animation: MostrarCuatro 2.5s;
+}
+
+@keyframes MostrarCuatro {
+    0% {
+        opacity: 0;
+    }
+
+    70% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+.ArrowSignal {
+    position: absolute;
+    right: 5.5%;
+    top: 8.5%;
+    fill: white;
+    animation: Arrow 5s infinite;
+}
+
+@keyframes Arrow {
+    0% {
+        transform: translate(-15px, 10px);
+    }
+    50% {
+        transform: translate(15px, -10px);
+    }
+
+    100% {
+        transform: translate(-15px, 10px);
+    }
+}

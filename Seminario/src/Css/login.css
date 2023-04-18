@@ -1,0 +1,183 @@
+
+body{    
+    background-color: #181818;    
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.ContenedorLogin {
+    position: relative;
+    display: flex;
+    width: 1200px;
+    height: 650px;
+    margin: -1% auto;    
+}
+
+.ContenedorImagen {
+    width: 60%;
+    height: 100%;        
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    display: flex;    
+    justify-content: center;
+    transition: all 800ms;    
+    background-color: white;
+    background-image: url('../../public/imgs/Foda.png');
+    background-size:cover;
+    background-position: center;
+}
+
+.ContenedorImagen img {
+    width: auto;
+    height: auto;
+}
+
+.ContenedorFormulario {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    transition: all 800ms;    
+}
+
+.Box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color: #181818;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;    
+    transition: all 800ms;
+    z-index: 1;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+
+.TextBox {
+    width: 90%;
+    height: 40px;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    text-align: center;
+    background-color: transparent;
+    border: 2px solid #aaa;
+    border-radius: 10px;
+    color: #181818;    
+    font-size: 20px;
+    color: #181818;     
+    transition: all 400ms;   
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.TextBox:focus{
+    outline: none;
+    border-color: #F7941D;
+}
+
+
+.Box h1 {
+    position: relative;
+    top: 2%;
+    font-size: 80px;
+    margin: 0%;
+    margin-top: 5%;
+
+}
+
+.labels{
+    text-align: start;    
+}
+.Formulario {
+    width: 100%;
+    height: auto;
+    margin-top: 5%;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;    
+    margin-left: 10%;
+    /* background-color: red; */
+}
+
+.Botones{
+    width: 100%;
+    height: 20%;    
+    /* background-color: red; */
+}
+
+.Eslogan{
+    font-size: 17px;
+    position: relative;    
+    margin-top: -9%;
+    right: 5%;
+    text-align: center;
+}
+
+label{
+    font-size: 35px;
+}
+
+/* CSS */
+.BotonSign, .BotonSignOn{
+  align-items: center;
+  position: absolute;
+  right: 5%;
+  top: 2.5%;
+  appearance: none;
+  background-color: #fff;
+  border-radius: 24px;
+  border-style: none;
+  box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+  box-sizing: border-box;
+  color: #3c4043;
+  cursor: pointer;
+  display: inline-flex;
+  fill: currentcolor;
+  font-family: "Google Sans",Roboto,Arial,sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  justify-content: center;
+  letter-spacing: .25px;
+  line-height: normal;
+  max-width: 100%;
+  overflow: visible;
+  padding: 2px 24px;
+  text-align: center;
+  text-transform: none;
+  transition: all 800ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: auto;
+  will-change: transform,opacity;
+  z-index: 0;  
+}
+
+.BotonSignOn{
+    width: 40%;
+    height: 60%;
+    right: 0%;    
+    margin-top: 5%;
+    position: relative;
+} 
+
+.BotonSign:hover, .BotonSignOn:hover{
+  background: #4CABCF;
+  color: white;
+}
+
+.BotonSign:active, .BotonSignOn:active{
+  box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+  outline: none;
+}
+
+.BotonSign:focus, .BotonSignOn:focus {
+  outline: none;
+  border: 2px solid #4285f4;
+}

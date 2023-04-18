@@ -1,0 +1,278 @@
+body {
+  display: flex;
+  flex-direction: row;
+}
+
+.AllFoda {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.Foda {
+  /* margin-left: -10%; */
+  width: 75%;
+  height: 100vh;
+  /* background-color: red; */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Foda2 {
+  width: 25%;
+  height: 100vh;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+}
+
+.zone,
+.zoneDatos {
+  position: relative;
+  width: 48%;
+  height: 47%;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #DAFCFC;
+  margin: 1% auto;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  transition: all 800ms;
+}
+
+.zone:hover {
+  transform: translateY(5px);
+}
+
+.zoneDatos {
+  width: 95%;
+  height: 65%;
+  border-radius: 15px;
+  color: white;
+  display: flex;
+  margin-top: 4.5%;
+  flex-direction: column;
+}
+
+.zoneDatos .Datos {
+  height: 80%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+span {
+  width: 100%;
+  /* background-color: red; */
+}
+
+.SVG {
+  width: 100%;
+  display: flex;
+  background-color: #181818;
+  height: 45px;
+}
+
+.SVG svg {
+  fill: white;
+  width: 50%;
+  cursor: pointer;
+  transition: 400ms;
+}
+
+.SVG1:hover {
+  fill: #3bafde;
+}
+
+.SVG2:hover {
+  fill: #f7dc6f;
+}
+
+.SVG3:hover {
+  fill: #e74c3c;
+}
+
+.full {
+  position: absolute;
+  right: 1%;
+  top: 1%;
+  fill: #0A6376;
+  cursor: pointer;
+}
+
+
+.zone svg:hover {
+  fill: #17B4C0;
+}
+
+
+.zoneDelete:hover {
+  transform: scale(1.05, 1.05);
+}
+
+.Formularios {
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  width: 95%;
+  margin: auto;
+  height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 15px;
+  background-color: #DAFCFC;
+}
+
+#Titulo {
+  width: 100%;
+  height: 25%;
+  margin: 0%;
+  text-align: center;
+  background-color: #181818;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+.Formularios .box {
+  width: 70%;
+  height: 60%;
+  /* margin: auto; */
+  text-align: center;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+}
+
+.Formularios p {
+  font-size: 28px;
+  color: white;
+  margin: 2% 0%;
+}
+
+.Formularios input {
+  width: 40%;
+  height: 40%;
+  margin: auto;
+}
+
+.Letra {
+  width: 10%;
+  height: 100%;
+  /* background-color: red; */
+}
+
+.Letra p {
+  position: relative;
+  margin: 0%;
+  font-size: 50px;
+  color: #17B4C0;
+  /* background-color: blue; */
+  text-decoration: underline;
+}
+
+.zoneDatos p {
+  font-size: 20px;
+  margin-top: 1%;
+  text-decoration: none;
+}
+
+.AllContent {
+  width: 80%;
+  height: 100%;
+  /* background-color: blue; */
+}
+
+.Icono {
+  width: 100%;
+  height: 12%;
+  /* background-color: red; */
+  text-align: center;
+}
+
+.Contenido {
+  position: relative;
+  /* margin: 2% auto; */
+  width: 100%;
+  /* padding: 1%; */
+  height: 85%;
+  /* background-color: red; */
+  /* z-index: 1; */
+  overflow-y: scroll;
+  /* border: 2px dashed black; */
+  border-radius: 10px;
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+.zone h2 {
+  text-align: center;
+  margin-top: 0;
+}
+
+.btnAgregar {
+  align-items: center;
+  appearance: none;
+  background-color: #181818;
+  border-radius: 24px;
+  border-style: none;
+  box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px, rgba(0, 0, 0, .14) 0 6px 10px 0, rgba(0, 0, 0, .12) 0 1px 18px 0;
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  display: inline-flex;
+  fill: currentcolor;
+  font-family: "Google Sans", Roboto, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 48px;
+  justify-content: center;
+  letter-spacing: .25px;
+  line-height: normal;
+  max-width: 100%;
+  overflow: visible;
+  padding: 2px 24px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1), opacity 15ms linear 30ms, transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: auto;
+  will-change: transform, opacity;
+  z-index: 0;
+  transition: all 400ms;
+}
+
+.btnAgregar:hover {
+  background: #F6F9FE;
+  color: #0A6376;
+}
+
+.btnAgregar:active {
+  box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+  outline: none;
+}
+
+.btnAgregar:focus {
+  outline: none;
+  border: 2px solid #4285f4;
+}
+
+.btnAgregar:not(:disabled) {
+  box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+.btnAgregar:not(:disabled):hover {
+  box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+}
+
+.btnAgregar:not(:disabled):focus {
+  box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+.btnAgregar:not(:disabled):active {
+  box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+}
+
+.btnAgregar:disabled {
+  box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}

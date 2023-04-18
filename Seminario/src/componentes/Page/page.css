@@ -1,0 +1,8 @@
+@font-face {
+    font-family: "SanFrancisco";
+    src: url("../../../public/fuente//SFNSDisplay-Light.otf") format("truetype");
+}
+
+*{
+    font-family:  "SanFrancisco";
+}

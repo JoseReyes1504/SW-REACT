@@ -1,0 +1,7 @@
+.CardFodaContent {
+    width: "100%";
+    height: "200px";
+    background-color: 'red';
+    display: "flex";
+    flex-wrap: "wrap";
+}

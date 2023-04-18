@@ -1,0 +1,200 @@
+.ContenedorPrincipal {
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+}
+
+.Seccion1 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    background-color: #e2f0f7;
+}
+
+.Entidad {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    /* background-color: yellow; */
+}
+
+.ContenedorBoxes {
+    width: 40%;
+    height: 90%;
+    margin: 0.5% auto;
+    display: flex;
+    flex-direction: column;
+    /* background-color: green; */
+}
+
+.ContenedorBoxes:nth-child(2) {
+    width: 1%;
+    margin-top: 0%;
+    background-color: #181818;
+}
+
+.ContenedorBoxes:nth-child(3) {
+    margin-top: 5%;
+    /* background-color: red; */
+}
+
+.Boxes,
+.BoxesFoda {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed white;
+    background-image: linear-gradient(to bottom, #4e9fbb, #4897c6, #598ccd, #787ecb, #996cbe);
+    margin: 1% auto;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 100px;
+    transition: all 600ms;
+}
+
+.Boxes:hover {
+    transform: scale(1.05, 1.05);
+}
+
+.BoxesFoda {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    position: relative;
+    width: 300px;
+    height: 20%;
+    display: flex;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+
+.BoxesFoda p {
+    margin: 0%;
+}
+
+.Descripcion {
+    position: absolute;
+    top: 150%;
+    color: #181818;
+    padding: 5%;
+    border: 2px dashed black;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    /* background-color: red; */
+}
+
+.Titulo {
+    width: 100%;
+    height: 15%;
+    margin: 0%;
+    font-size: 15px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    color: white;
+    border-bottom: 2px solid white;
+    /* background-color: white; */
+}
+
+.fodaFont {
+    height: 80%;
+    margin: 2.5% 0%;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+}
+
+.Boxes svg {
+    fill: white;
+}
+
+.arrow-down {
+    /* Modify size here: */
+    --size: 80px;
+    --padding: 10px;
+    margin: auto;
+    position: relative;
+    width: calc(var(--size) - var(--padding));
+    height: calc(var(--size) / 2);
+    background-image: linear-gradient(to bottom, #4e9fbb, #4897c6, #598ccd, #787ecb, #996cbe);
+    padding: var(--padding);
+}
+
+.arrow-down:after {
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background-color: #4e9fbb;
+    height: 16px;
+    width: 16px;
+}
+
+.Empezar {
+    align-items: center;
+    appearance: none;
+    background-color: #181818;
+    border-radius: 24px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px, rgba(0, 0, 0, .14) 0 6px 10px 0, rgba(0, 0, 0, .12) 0 1px 18px 0;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    display: inline-flex;
+    fill: currentcolor;
+    font-family: "Google Sans", Roboto, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: .25px;
+    line-height: normal;
+    max-width: 100%;
+    overflow: visible;
+    padding: 2px 24px;
+    position: absolute;
+    text-align: center;
+    text-transform: none;
+    transition: all 800ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+    bottom: 2%;
+    margin-left: -5%;
+    will-change: transform, opacity;
+    z-index: 0;
+}
+
+.Empezar:hover {
+    background: #F6F9FE;
+    color: #181818;
+}
+
+.Empezar:active {
+    box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+    outline: none;
+}
+
+.Empezar:focus {
+    outline: none;
+    border: 2px solid #4285f4;
+}
+
+.Empezar:not(:disabled) {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+.Empezar:not(:disabled):hover {
+    box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+}
+
+.Empezar:not(:disabled):focus {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+.Empezar:not(:disabled):active {
+    box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+}
+
+.Empezar:disabled {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
