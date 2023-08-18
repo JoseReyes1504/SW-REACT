@@ -7,7 +7,6 @@ import { PropsWithChildren } from "react";
 const PrivateRoute = ({ children, allowedRoles = [] }: PropsWithChildren<{ allowedRoles?: string[] }>) => {
   
   const user = useSelector((state: RootState) => {
-    // console.log('state:', state);
     return state.auth.token;
   });    
 

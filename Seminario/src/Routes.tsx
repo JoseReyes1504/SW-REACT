@@ -17,15 +17,13 @@ import { Presentacion } from './pages/Home/PaginaPresentacion';
 const Routes = () => {
   return (
     <Router>
-      <Switch>
-        <Route path="/SignOn" element={<PrivateRoute><SignOn /></PrivateRoute>} />
-        <Route path="/Presentacion" element={<PrivateRoute><Presentacion /></PrivateRoute>} />
-        <Route path="/Home" element={<PrivateRoute><Home /></PrivateRoute>} />
-        <Route path="/Empresas" element={<PrivateRoute><Empresas /></PrivateRoute>} />
-        <Route path="/Fodas" element={<PrivateRoute><AllFoda /></PrivateRoute>} />
-        <Route path="/Foda" element={<PrivateRoute><Foda /></PrivateRoute>} />
-
-
+      <Switch>        
+        <Route path="/SignOn" element={<SignOn />} />
+        <Route path="/Presentacion" element={<Presentacion />} />
+        <Route path="/Home" element={<Home />} />
+        <Route path="/Empresas" element={<Empresas />} />
+        <Route path="/Fodas" element={<AllFoda />} />
+        <Route path="/Foda" element={<Foda />}/>
         <Route path="*" element={<Navigate to="/" />} />
       </Switch>
     </Router>

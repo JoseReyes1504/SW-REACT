@@ -9,7 +9,7 @@ export const EmpresasApi = createApi({
     baseQuery: fetchBaseQuery({
         baseUrl: API,
         prepareHeaders: (headers) => {
-            headers.set('apikey', "89393c34-e984-4376-83b8-6a94c708731e");
+            headers.set('apikey', "0273f8f2-4a8e-4fbf-9438-b1dcbddf4f52");
             headers.set('Authorization', JWT || '');
         }
     }),
