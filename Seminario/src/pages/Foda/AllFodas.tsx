@@ -199,29 +199,29 @@ export const AllFoda: FC = () => {
         return (
             <>
                 {getList(props.Nlista).map(item => (
-                    <div className="CardFodaContent" style={CardContentFoda}
+                    <div className="CardFodaContent" style={{position: "relative", width: "95%", height: "120px", margin: "2% auto", boxShadow: "#71A1E5 0px 2px 8px 0px", backgroundColor: "transparent", border: "2px dashed #181818",     color: "#17B4C0", display: "flex", flexWrap: "wrap", borderRadius: "15px", cursor: "move", }}
                         key={item._id} draggable onDragStart={(event: React.DragEvent<HTMLDivElement>) => startDrag(event, item)}>
                         <div className="Top" style={{ width: "100%", height: "17%" }} >
                             <p style={{ textTransform: "uppercase", letterSpacing: 1, width: "100%", height: "0%" }}>{item.nombre}</p>
-                            <svg xmlns="http://www.w3.org/2000/svg" style={SVG} onClick={() => AbrirFoda(item._id || '')} height="24" viewBox="0 96 960 960" width="24"><path d="M200 936q-33 0-56.5-23.5T120 856V296q0-33 23.5-56.5T200 216h168q13-36 43.5-58t68.5-22q38 0 68.5 22t43.5 58h168q33 0 56.5 23.5T840 296v268q-19-9-39-15.5t-41-9.5V296H200v560h242q3 22 9.5 42t15.5 38H200Zm0-120v40-560 243-3 280Zm80-40h163q3-21 9.5-41t14.5-39H280v80Zm0-160h244q32-30 71.5-50t84.5-27v-3H280v80Zm0-160h400v-80H280v80Zm200-190q13 0 21.5-8.5T510 236q0-13-8.5-21.5T480 206q-13 0-21.5 8.5T450 236q0 13 8.5 21.5T480 266Zm240 750q-83 0-141.5-58.5T520 816q0-83 58.5-141.5T720 616q83 0 141.5 58.5T920 816q0 83-58.5 141.5T720 1016Zm-20-80h40V836h100v-40H740V696h-40v100H600v40h100v100Z" /></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" style={{position: "absolute", top: "25%", right: "2%", fill: "#f5b041", cursor: "pointer"}} onClick={() => AbrirFoda(item._id || '')} height="24" viewBox="0 96 960 960" width="24"><path d="M200 936q-33 0-56.5-23.5T120 856V296q0-33 23.5-56.5T200 216h168q13-36 43.5-58t68.5-22q38 0 68.5 22t43.5 58h168q33 0 56.5 23.5T840 296v268q-19-9-39-15.5t-41-9.5V296H200v560h242q3 22 9.5 42t15.5 38H200Zm0-120v40-560 243-3 280Zm80-40h163q3-21 9.5-41t14.5-39H280v80Zm0-160h244q32-30 71.5-50t84.5-27v-3H280v80Zm0-160h400v-80H280v80Zm200-190q13 0 21.5-8.5T510 236q0-13-8.5-21.5T480 206q-13 0-21.5 8.5T450 236q0 13 8.5 21.5T480 266Zm240 750q-83 0-141.5-58.5T520 816q0-83 58.5-141.5T720 616q83 0 141.5 58.5T920 816q0 83-58.5 141.5T720 1016Zm-20-80h40V836h100v-40H740V696h-40v100H600v40h100v100Z" /></svg>
                         </div>
 
-                        <div className="BoxesCardFoda" style={BoxesCard}>
+                        <div className="BoxesCardFoda" style={{width: "25%",height: "65%", display: "flex", flexDirection: "column", alignItems: "center"}}>
                             <p style={{ margin: "0%" }}>F</p>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="#17B4C0" height="40" viewBox="0 96 960 960" width="40"><path d="m826 471-46.666-46.666 40-40.334L672 236.666l-40.334 40L584 229l30-31q23-23 57-22.5t57 23.5l129 129q23 23 23 56.5T857 441l-31 30ZM346 952q-23 23-56.5 23T233 952L94.666 813.666q-19-19.251-19-47.292t19-47.04L134 680l47.666 47-40.333 40L289 914.667l40-40.333L376 922l-30 30Zm397-317.333L818.667 559 497 237.333 421.333 313 743 634.667Zm-280 280L539.334 838 218 516.666 141.333 593 463 914.667Zm4-243.333 109.334-109-82.668-82.668-109 109.334L467 671.334Zm43 290q-18.956 18.999-46.978 18.999-28.022 0-47.022-18.999L94.666 640q-19-18.956-19-46.978 0-28.022 19-47.022l75.668-76.334q19.251-18.999 47.292-18.999t47.04 18.999L337 542l110-110-72.334-72q-18.999-18.956-18.999-46.978 0-28.022 18.999-47.022l75.668-76.334q19.251-18.999 47.292-18.999t47.04 18.999l321.668 321.668q18.999 19.251 18.999 47.292t-18.999 47.04L790 681.334q-18.956 18.999-46.978 18.999-28.022 0-47.022-18.999L624 609 514 719l72.334 72.334q18.999 19.251 18.999 47.292t-18.999 47.04L510 961.334Z" /></svg>
                             <p style={{ margin: "0px 0%" }}>{item.Fcantidad}</p>
                         </div>
-                        <div className="BoxesCardFoda" style={BoxesCard}>
+                        <div className="BoxesCardFoda" style={{width: "25%",height: "65%", display: "flex", flexDirection: "column", alignItems: "center"}}>
                             <p style={{ margin: "0%" }}>O</p>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="#17B4C0" height="40" viewBox="0 96 960 960" width="40"><path d="m768 432.666-45.333-103.333-106-47.333 106-46.667 45.333-100 45.333 100 106 46.667-106 47.333L768 432.666ZM768 1016l-45.333-100.666-106-46.667 106-46.667L768 718.001 813.333 822l106 46.667-106 46.667L768 1016ZM341.999 873.333l-94.666-204.667L40 575.333 247.333 482l94.666-203.999L437.333 482l206.666 93.333-206.666 93.333-95.334 204.667Zm0-163.333 45.334-92.667 94-42-94-42-45.334-92.667-44.666 92.667-94.667 42 94.667 42L341.999 710Zm0-134.667Z" /></svg>
                             <p style={{ margin: "0px 0%" }}>{item.Ocantidad}</p>
                         </div>
-                        <div className="BoxesCardFoda" style={BoxesCard}>
+                        <div className="BoxesCardFoda" style={{width: "25%",height: "65%", display: "flex", flexDirection: "column", alignItems: "center"}}>
                             <p style={{ margin: "0%" }}>D</p>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="#17B4C0" height="40" viewBox="0 96 960 960" width="40"><path d="m40 936 440-760 440 760H40Zm115.333-66.666h649.334L480 309.333 155.333 869.334ZM482.784 818q14.216 0 23.716-9.617 9.5-9.617 9.5-23.833 0-14.216-9.617-23.716-9.617-9.5-23.833-9.5-14.217 0-23.716 9.617-9.5 9.617-9.5 23.833 0 14.216 9.617 23.716 9.616 9.5 23.833 9.5Zm-33.45-114H516V488h-66.666v216ZM480 589.333Z" /></svg>
                             <p style={{ margin: "0px 0%" }}>{item.Dcantidad}</p>
                         </div>
-                        <div className="BoxesCardFoda" style={BoxesCard}>
+                        <div className="BoxesCardFoda" style={{width: "25%",height: "65%", display: "flex", flexDirection: "column", alignItems: "center"}}>
                             <p style={{ margin: "0%" }}>A</p>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="#17B4C0" height="40" viewBox="0 96 960 960" width="40"><path d="M389.333 712.667 480 624l90.667 88.667L619.333 664l-90-88.667 90-89.333-48.666-48.667L480 526l-90.667-88.667L340.667 486l90 89.333-90 88.667 48.666 48.667ZM480 975.333q-139.667-35-229.833-161.5Q160 687.333 160 535.333v-240l320-120 320 120v240q0 152-90.167 278.5-90.166 126.5-229.833 161.5ZM480 906q111.334-36.333 182.334-139.667 71-103.333 71-231V341.666L480 246.333l-253.334 95.333v193.667q0 127.667 71 231Q368.666 869.667 480 906Zm0-330Z" /></svg>
                             <p style={{ margin: "0px 0%" }}>{item.Acantidad}</p>
@@ -370,8 +370,7 @@ const CardContentFoda = {
     margin: "2% auto",
     boxShadow: "#71A1E5 0px 2px 8px 0px",
     backgroundColor: "transparent",
-    border: "2px dashed #181818",
-    // backgroundImage: "linear-gradient(to top, #255acf, #3a6ad5, #4e7ada, #618adf, #749ae3)",
+    border: "2px dashed #181818",    
     color: "#17B4C0",
     display: "flex",
     flexWrap: "wrap",
@@ -380,8 +379,7 @@ const CardContentFoda = {
 };
 const BoxesCard = {
     width: "25%",
-    height: "65%",
-    // backgroundColor: 'blue',
+    height: "65%",    
     display: "flex",
     flexDirection: "column",
     alignItems: "center"
